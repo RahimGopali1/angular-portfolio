@@ -1,5 +1,5 @@
 @use "./mixins";
-::selection{
+::selection {
   background: var(--black);
   color: var(--white);
 }
@@ -10,8 +10,9 @@ body {
   scroll-behavior: smooth;
   background: var(--bg-color);
   color: var(--off-white);
+  font-family: "Raleway", serif !important;
 }
-a{
+a {
   text-decoration: none;
 }
 
@@ -25,11 +26,24 @@ a{
 }
 .section-padding {
   padding: 5rem 0;
-  @media screen and (max-width: 992px) {
-    padding: 2rem 0;
-  }
+  // @media screen and (max-width: 992px) {
+  //   padding: 2rem 0;
+  // }
 }
 
 ul {
   @include mixins.MarPad;
+}
+
+.btn-clicked {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  background: var(--bg-1);
+  box-shadow: var(--shadow-1);
+  @media screen and (max-width: 767px) {
+    width: 3rem;
+    height: 3rem;
+  }
 }
