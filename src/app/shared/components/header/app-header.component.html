@@ -1,0 +1,27 @@
+<header>
+    <div class="sidebar-nav">
+        <div class="toggle" (click)="toggleMenu()" [class.active]="isActive">
+            <span></span>
+        </div>
+
+        <div class="navbar" [class.active]="isActive">
+            <ul class="nav-links d-flex flex-column">
+                <li class="nav-item active mb-3">
+                    <span>Home</span> <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li class="nav-item mb-3">
+                    <span>Resume</span> <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li class="nav-item mb-3">
+                    <span>Portfolio</span> <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li class="nav-item mb-3">
+                    <span>Blog</span> <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li class="nav-item mb-3">
+                    <span>Contact</span> <i class="fa-solid fa-arrow-right"></i>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>

@@ -1,0 +1,35 @@
+@use "./mixins";
+::selection{
+  background: var(--black);
+  color: var(--white);
+}
+body {
+  position: relative;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background: var(--bg-color);
+  color: var(--off-white);
+}
+a{
+  text-decoration: none;
+}
+
+.app-container {
+  max-width: 84rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  @media screen and (max-width: 1200px) {
+    padding: 0 0.8rem;
+  }
+}
+.section-padding {
+  padding: 5rem 0;
+  @media screen and (max-width: 992px) {
+    padding: 2rem 0;
+  }
+}
+
+ul {
+  @include mixins.MarPad;
+}
