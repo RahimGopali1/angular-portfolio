@@ -10,10 +10,11 @@ import {
   Inject,
 } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
+import { ResumeComponent } from './resume/resume.component';
 
 @Component({
   selector: 'home',
-  imports: [],
+  imports: [ResumeComponent],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.scss',
 })
