@@ -69,3 +69,31 @@ ul {
     height: 3rem;
   }
 }
+
+.main-title-wrapper {
+  position: relative;
+  margin-bottom: 5rem;
+  padding-left: 2rem;
+  .title-label {
+    color: var(--primary);
+    font-size: 16px;
+    font-family: "Poppins", serif;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .main-title {
+    font-size: 60px;
+    font-weight: 800;
+    letter-spacing: 3px;
+  }
+  &::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: var(--primary);
+  }
+}

@@ -1,0 +1,58 @@
+.resume-section {
+  .resume-tab {
+    ::ng-deep {
+      .mat-mdc-tab-group {
+        .mat-mdc-tab-header {
+          overflow: visible;
+          .mat-mdc-tab-label-container {
+            box-shadow: var(--shadow-1);
+            border: none;
+            overflow: visible;
+            border-radius: 10px;
+            .mat-mdc-tab-list {
+              .mat-mdc-tab-labels {
+                background: var(--bg-1);
+                border-radius: 10px;
+                display: flex;
+                .mdc-tab {
+                  padding: 2rem 24px;
+                  height: auto;
+                  border-radius: 10px;
+                  transition: 0.5s;
+                  .mdc-tab__ripple {
+                    border: none;
+                  }
+                  .mdc-tab__text-label {
+                    color: var(--white);
+                    font-size: 18px;
+                  }
+                  .mdc-tab-indicator__content {
+                    border: none;
+                  }
+                  &.mdc-tab--active,
+                  &:hover {
+                    box-shadow: var(--shadow-1);
+                    border: none;
+                    background: var(--bg-1);
+                    .mdc-tab__text-label {
+                      color: var(--primary);
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .mat-mdc-tab-body-wrapper {
+          .mat-mdc-tab-body {
+            padding: 3rem 1rem;
+            .tab-body-wrapper {
+              //   overflow: hidden;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
