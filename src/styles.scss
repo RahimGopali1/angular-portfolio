@@ -2,3 +2,6 @@
 @use "./styles/global";
 @use "./styles/variable";
 @use "./styles/mixins";
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

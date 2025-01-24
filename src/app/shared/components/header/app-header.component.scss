@@ -16,7 +16,7 @@
       box-shadow: 0 10px 0 var(--off-white), 0 -10px 0 var(--off-white);
       transition: 0.5s;
     }
-    &::after{
+    &::after {
       background: none;
     }
     &.active {
@@ -37,7 +37,7 @@
         }
       }
     }
-    &:hover{
+    &:hover {
       transform: translate(0);
     }
   }
@@ -53,53 +53,57 @@
     z-index: 998;
     opacity: 0;
     transform: translateY(-100%);
-    transition: 1s;
+    transition: 1s all ease-in-out;
     .nav-links {
       width: 100%;
       height: auto;
       z-index: 1;
       .nav-item {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        cursor: pointer;
-        transition: 0.3s all ease-in-out;
-        overflow: hidden;
-        span {
-          position: relative;
-          color: var(--white);
-          font-size: 16px;
-          font-weight: 500;
-          display: inline-block;
-          padding: 0 0.5rem;
-          &::after {
-            content: "";
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            background-color: var(--primary);
-            width: 0%;
-            height: 1px;
-            transition: 0.3s all ease-in-out;
-          }
-        }
-        i {
-          transform: translateX(0);
+        a {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          cursor: pointer;
           transition: 0.3s all ease-in-out;
-        }
-        &:hover,
-        &.active {
+          overflow: hidden;
           span {
-            color: var(--primary);
+            position: relative;
+            color: var(--white);
+            font-size: 16px;
+            font-weight: 500;
+            display: inline-block;
+            padding: 0 0.5rem;
             &::after {
-              width: 100%;
-              transform: translate(-50%, -50%);
+              content: "";
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              background-color: var(--primary);
+              width: 0%;
+              height: 1px;
+              transition: 0.3s all ease-in-out;
             }
           }
           i {
-            color: var(--primary);
-            transform: translateX(110%);
+            transform: translateX(0);
+            transition: 0.3s all ease-in-out;
+          }
+        }
+        &:hover,
+        &.active {
+          a {
+            span {
+              color: var(--primary);
+              &::after {
+                width: 100%;
+                transform: translate(-50%, -50%);
+              }
+            }
+            i {
+              color: var(--primary);
+              transform: translateX(110%);
+            }
           }
         }
       }

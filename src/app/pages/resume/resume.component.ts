@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { MatTabsModule } from '@angular/material/tabs';
 
 @Component({
   selector: 'resume',
-  imports: [],
+  imports: [MatTabsModule],
   templateUrl: './resume.component.html',
   styleUrl: './resume.component.scss'
 })
