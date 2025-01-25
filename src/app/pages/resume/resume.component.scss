@@ -45,10 +45,165 @@
         }
         .mat-mdc-tab-body-wrapper {
           .mat-mdc-tab-body {
-            padding: 3rem 1rem;
+            padding: 3rem 0;
             .tab-body-wrapper {
-              //   overflow: hidden;
               width: 100%;
+              .timeline-wrapper {
+                .timeline {
+                  position: relative;
+                  margin: 50px auto;
+                  padding: 40px 0;
+                  width: 100%;
+                  box-sizing: border-box;
+                  &:before {
+                    content: "";
+                    position: absolute;
+                    left: 50%;
+                    width: 2px;
+                    height: 100%;
+                    background: var(--off-white);
+                  }
+                  ul {
+                    li {
+                      position: relative;
+                      width: 50%;
+                      padding: 20px 40px;
+                      box-sizing: border-box;
+                      &:nth-child(odd) {
+                        clear: both;
+                        &:before {
+                          content: "";
+                          position: absolute;
+                          width: 10px;
+                          height: 10px;
+                          top: 24px;
+                          right: -6px;
+                          background: var(--primary);
+                          border-radius: 50%;
+                          box-shadow: 0 0 0 3px var(--primary-dim);
+                        }
+                        .time {
+                          right: -165px;
+                        }
+                      }
+                      &:nth-child(even) {
+                        float: right;
+                        clear: both;
+                        &:before {
+                          content: "";
+                          position: absolute;
+                          width: 10px;
+                          height: 10px;
+                          top: 24px;
+                          left: -4px;
+                          background: var(--primary);
+                          border-radius: 50%;
+                          box-shadow: 0 0 0 3px var(--primary-dim);
+                        }
+                        .time {
+                          left: -165px;
+                        }
+                      }
+                      .content {
+                        background: var(--bg-1);
+                        box-shadow: var(--shadow-1);
+                        padding: 2rem;
+                        border-radius: 10px;
+                        h3 {
+                          color: var(--primary);
+                          font-weight: 600;
+                        }
+                        p {
+                          font-size: 16px;
+                          color: var(--white);
+                        }
+                      }
+                      .time {
+                        position: absolute;
+                        top: 12px;
+                        margin: 0;
+                        padding: 8px 16px;
+                        background: var(--primary);
+                        color: var(--white);
+                        border-radius: 18px;
+                        box-shadow: 0 0 0 3px var(--primary-dim);
+                        h4 {
+                          margin: 0;
+                          padding: 0;
+                          font-size: 14px;
+                        }
+                      }
+                    }
+                  }
+                }
+                @media screen and (max-width: 767px) {
+                  .timeline {
+                    &:before {
+                      left: 20px;
+                      height: 100%;
+                    }
+                    ul {
+                      li {
+                        &:nth-child(odd) {
+                          width: 100%;
+                          text-align: left;
+                          padding-left: 50px;
+                          padding-bottom: 50px;
+                          &:before {
+                            top: -18px;
+                            left: 16px;
+                          }
+                          .time {
+                            top: -30px;
+                            left: 50px;
+                            right: inherit;
+                          }
+                        }
+                        &:nth-child(even) {
+                          width: 100%;
+                          text-align: left;
+                          padding-left: 50px;
+                          padding-bottom: 50px;
+                          &:before {
+                            top: -18px;
+                            left: 16px;
+                          }
+                          .time {
+                            top: -30px;
+                            left: 50px;
+                            right: inherit;
+                          }
+                        }
+                      }
+                    }
+                  }
+                  h1 {
+                    font-size: 40px;
+                    text-align: center;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .resume-tab {
+      ::ng-deep {
+        .mat-mdc-tab-group {
+          .mat-mdc-tab-header {
+            .mat-mdc-tab-label-container {
+              .mat-mdc-tab-list {
+                .mat-mdc-tab-labels {
+                  display: flex;
+                  flex-direction: column;
+                  .mdc-tab {
+                    padding: 2rem 24px;
+                  }
+                }
+              }
             }
           }
         }
