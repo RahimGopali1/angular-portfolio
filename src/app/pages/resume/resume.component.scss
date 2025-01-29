@@ -49,10 +49,14 @@
             .tab-body-wrapper {
               width: 100%;
               .timeline-wrapper {
+                h1 {
+                  text-align: center;
+                  margin: 0;
+                  padding: 0;
+                }
                 .timeline {
                   position: relative;
-                  margin: 50px auto;
-                  padding: 40px 0;
+                  margin: 50px auto 0 auto;
                   width: 100%;
                   box-sizing: border-box;
                   &:before {
@@ -80,7 +84,8 @@
                           right: -6px;
                           background: var(--primary);
                           border-radius: 50%;
-                          box-shadow: 0 0 0 3px var(--primary-dim);
+                          // box-shadow: 0 0 0 3px var(--primary-dim);\
+                          animation: shadow 2s infinite;
                         }
                         .time {
                           right: -165px;
@@ -98,7 +103,8 @@
                           left: -4px;
                           background: var(--primary);
                           border-radius: 50%;
-                          box-shadow: 0 0 0 3px var(--primary-dim);
+                          // box-shadow: 0 0 0 3px var(--primary-dim);
+                          animation: shadow 2s infinite;
                         }
                         .time {
                           left: -165px;
@@ -116,6 +122,7 @@
                         p {
                           font-size: 16px;
                           color: var(--white);
+                          margin: 0;
                         }
                       }
                       .time {
@@ -126,17 +133,73 @@
                         background: var(--primary);
                         color: var(--white);
                         border-radius: 18px;
-                        box-shadow: 0 0 0 3px var(--primary-dim);
+                        // box-shadow: 0 0 0 3px var(--primary-dim);
+                        animation: pulse 2s infinite;
                         h4 {
                           margin: 0;
                           padding: 0;
                           font-size: 14px;
                         }
                       }
+                      @keyframes pulse {
+                        0% {
+                          box-shadow: 0 0 0 0 var(--primary-dim);
+                        }
+                        5% {
+                          transform: scale(1.01);
+                        }
+                        15% {
+                          transform: scale(1);
+                        }
+                        75% {
+                          box-shadow: 0 0 0 15px rgba(57, 101, 168, 0);
+                        }
+                        100% {
+                          box-shadow: 0 0 0 20px rgba(57, 101, 168, 0);
+                        }
+                      }
+                      @keyframes shadow {
+                        0% {
+                          box-shadow: 0 0 0 0 var(--primary-dim);
+                        }
+                        50% {
+                          box-shadow: 0 0 0 4px var(--primary-dim);
+                        }
+                        100% {
+                          box-shadow: 0 0 0 0 var(--primary-dim);
+                        }
+                      }
                     }
                   }
                 }
-                @media screen and (max-width: 767px) {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .resume-tab {
+      ::ng-deep {
+        .mat-mdc-tab-group {
+          .mat-mdc-tab-header {
+            .mat-mdc-tab-label-container {
+              .mat-mdc-tab-list {
+                .mat-mdc-tab-labels {
+                  display: flex;
+                  flex-direction: column;
+                  .mdc-tab {
+                    padding: 2rem 24px;
+                  }
+                }
+              }
+            }
+          }
+          .mat-mdc-tab-body-wrapper {
+            .mat-mdc-tab-body {
+              .tab-body-wrapper {
+                .timeline-wrapper {
                   .timeline {
                     &:before {
                       left: 20px;
@@ -180,27 +243,6 @@
                   h1 {
                     font-size: 40px;
                     text-align: center;
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  @media screen and (max-width: 767px) {
-    .resume-tab {
-      ::ng-deep {
-        .mat-mdc-tab-group {
-          .mat-mdc-tab-header {
-            .mat-mdc-tab-label-container {
-              .mat-mdc-tab-list {
-                .mat-mdc-tab-labels {
-                  display: flex;
-                  flex-direction: column;
-                  .mdc-tab {
-                    padding: 2rem 24px;
                   }
                 }
               }

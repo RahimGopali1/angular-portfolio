@@ -1,6 +1,7 @@
 .sidebar-nav {
+  position: relative;
   .toggle {
-    position: fixed;
+    position: absolute;
     top: 2rem;
     right: 2rem;
     display: flex;
@@ -151,10 +152,10 @@
     }
   }
   @media screen and (max-width: 767px) {
-    .toggle {
-      top: 1rem;
-      right: 1rem;
-    }
+    // .toggle {
+    //   top: 1rem;
+    //   right: 1rem;
+    // }
     .navbar {
       width: 100%;
     }

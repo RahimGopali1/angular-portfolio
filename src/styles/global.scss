@@ -26,9 +26,9 @@ a {
 }
 .section-padding {
   padding: 5rem 0;
-  // @media screen and (max-width: 992px) {
-  //   padding: 2rem 0;
-  // }
+  @media screen and (max-width: 992px) {
+    padding: 6rem 0 5rem 0;
+  }
 }
 
 ul {
