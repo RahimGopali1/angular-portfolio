@@ -6,37 +6,6 @@
                 <h1 class="main-title">My Resume</h1>
             </div>
             <mat-tab-group>
-                <mat-tab label="Professional Skills">
-                    <div class="tab-body-wrapper">
-                        <div class="skill-wrapper">
-                            <h1>Coding Skills</h1>
-                            <div class="row g-0">
-                                <div class="col-md-3 p-3">
-                                    <app-progress-bar [percent]="95" title="HTML"></app-progress-bar>
-                                </div>
-                                <div class="col-md-3 p-3">
-                                    <app-progress-bar [percent]="90" title="CSS"></app-progress-bar>
-                                </div>
-                                <div class="col-md-3 p-3">
-                                    <app-progress-bar [percent]="85" title="SCSS"></app-progress-bar>
-                                </div>
-                                <div class="col-md-3 p-3">
-                                    <app-progress-bar [percent]="70" title="JavaScript"></app-progress-bar>
-                                </div>
-
-                                <!-- <div class="col-md-6 p-3">
-                                    <div class="skill-wrapper">
-                                        <h1>Coding Skills</h1>
-                                        <div class="skill">
-                                            <div class="skill-name">HTML</div>
-                                        <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
-                                        </div>
-                                    </div>
-                                </div> -->
-                            </div>
-                        </div>
-                    </div>
-                </mat-tab>
                 <mat-tab label="Education">
                     <div class="tab-body-wrapper">
                         <div class="timeline-wrapper">
@@ -105,8 +74,174 @@
                         </div>
                     </div>
                 </mat-tab>
-
-                <mat-tab label="Experiance"> Experiance </mat-tab>
+                <mat-tab label="Professional Skills">
+                    <div class="tab-body-wrapper">
+                        <div class="skill-wrapper mb-5">
+                            <h1>Coding Skills</h1>
+                            <div class="row g-0">
+                                <div class="col-md-3 p-3">
+                                    <app-progress-bar [percent]="10" title="HTML"></app-progress-bar>
+                                </div>
+                                <div class="col-md-3 p-3">
+                                    <app-progress-bar [percent]="20" title="CSS"></app-progress-bar>
+                                </div>
+                                <div class="col-md-3 p-3">
+                                    <app-progress-bar [percent]="30" title="SCSS"></app-progress-bar>
+                                </div>
+                                <div class="col-md-3 p-3">
+                                    <app-progress-bar [percent]="40" title="JavaScript"></app-progress-bar>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-wrapper">
+                            <h1>Other Skills</h1>
+                            <div class="row g-0">
+                                <div class="col-md-6 p-3">
+                                    <div class="skill-item p-5">
+                                        <h1>Design Skills</h1>
+                                        <div class="skill mb-4">
+                                            <div class="skill-name mb-2">Photoshop</div>
+                                            <div class="progress">
+                                                <div class="progress-done" #progressBar data-done="10">
+                                                    10%
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="skill mb-4">
+                                            <div class="skill-name mb-2">Photoshop</div>
+                                            <div class="progress">
+                                                <div class="progress-done" #progressBar data-done="20">
+                                                    20%
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="skill mb-4">
+                                            <div class="skill-name mb-2">Photoshop</div>
+                                            <div class="progress">
+                                                <div class="progress-done" #progressBar data-done="30">
+                                                    30%
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="skill">
+                                            <div class="skill-name mb-2">Photoshop</div>
+                                            <div class="progress">
+                                                <div class="progress-done" #progressBar data-done="40">
+                                                    40%
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 p-3">
+                                    <div class="skill-item p-5">
+                                        <h1>Design Skills</h1>
+                                        <div class="skill mb-4">
+                                            <div class="skill-name mb-2">Photoshop</div>
+                                            <div class="progress">
+                                                <div class="progress-done" #progressBar data-done="10">
+                                                    10%
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="skill mb-4">
+                                            <div class="skill-name mb-2">Photoshop</div>
+                                            <div class="progress">
+                                                <div class="progress-done" #progressBar data-done="20">
+                                                    20%
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="skill mb-4">
+                                            <div class="skill-name mb-2">Photoshop</div>
+                                            <div class="progress">
+                                                <div class="progress-done" #progressBar data-done="30">
+                                                    30%
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="skill">
+                                            <div class="skill-name mb-2">Photoshop</div>
+                                            <div class="progress">
+                                                <div class="progress-done" #progressBar data-done="40">
+                                                    40%
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </mat-tab>
+                <mat-tab label="Experience">
+                    <div class="tab-body-wrapper">
+                        <div class="timeline-wrapper">
+                            <h1>Education Quality</h1>
+                            <div class="timeline mt-5">
+                                <ul>
+                                    <li>
+                                        <div class="content">
+                                            <h3>What is Lorem Ipsum?</h3>
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                industry. Lorem Ipsum has been the industry's standard dummy text ever
+                                                since the 1500s, when an unknown printer took a galley of type and
+                                                scrambled it to make a type specimen book. It has survived not only five
+                                                centuries, but also the leap into electronic typesetting, remaining
+                                                essentially unchanged. </p>
+                                        </div>
+                                        <div class="time">
+                                            <h4>January 2018</h4>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="content">
+                                            <h3>What is Lorem Ipsum?</h3>
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                industry. Lorem Ipsum has been the industry's standard dummy text ever
+                                                since the 1500s, when an unknown printer took a galley of type and
+                                                scrambled it to make a type specimen book. It has survived not only five
+                                                centuries, but also the leap into electronic typesetting, remaining
+                                                essentially unchanged. </p>
+                                        </div>
+                                        <div class="time">
+                                            <h4>February 2018</h4>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="content">
+                                            <h3>What is Lorem Ipsum?</h3>
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                industry. Lorem Ipsum has been the industry's standard dummy text ever
+                                                since the 1500s, when an unknown printer took a galley of type and
+                                                scrambled it to make a type specimen book. It has survived not only five
+                                                centuries, but also the leap into electronic typesetting, remaining
+                                                essentially unchanged. </p>
+                                        </div>
+                                        <div class="time">
+                                            <h4>March 2018</h4>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="content">
+                                            <h3>What is Lorem Ipsum?</h3>
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                industry. Lorem Ipsum has been the industry's standard dummy text ever
+                                                since the 1500s, when an unknown printer took a galley of type and
+                                                scrambled it to make a type specimen book. It has survived not only five
+                                                centuries, but also the leap into electronic typesetting, remaining
+                                                essentially unchanged. </p>
+                                        </div>
+                                        <div class="time">
+                                            <h4>April 2018</h4>
+                                        </div>
+                                    </li>
+                                    <div style="clear:both;"></div>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </mat-tab>
             </mat-tab-group>
         </div>
     </div>

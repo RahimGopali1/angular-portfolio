@@ -1,4 +1,6 @@
 .skill-card {
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
   .progress-bar {
     display: flex;
     align-items: center;
@@ -71,5 +73,10 @@
     //     }
     //   }
     // }
+  }
+  &:hover {
+    background: var(--bg-1);
+    box-shadow: var(--shadow-1);
+    border-radius: 10px;
   }
 }

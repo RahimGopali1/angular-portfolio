@@ -19,7 +19,7 @@ export class ProgressBarComponent implements OnChanges {
     if (changes['percent']) {
       setTimeout(() => {
         this.updateProgress();
-      }, 5);
+      }, 100);
     }
   }
 
