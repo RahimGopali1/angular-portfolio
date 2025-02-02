@@ -160,13 +160,13 @@
                       }
                       @keyframes shadow {
                         0% {
-                          box-shadow: 0 0 0 0 var(--primary-dim);
-                        }
-                        50% {
                           box-shadow: 0 0 0 4px var(--primary-dim);
                         }
-                        100% {
+                        50% {
                           box-shadow: 0 0 0 0 var(--primary-dim);
+                        }
+                        100% {
+                          box-shadow: 0 0 0 4px var(--primary-dim);
                         }
                       }
                     }
